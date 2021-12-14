@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <environments default="develop">
+        <environment id="develop">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="com.mysql.cj.jdbc.Driver"/>
+                <property name="url" value="jdbc:mysql://localhost:3306/user?serverTimezone=Asia/Shanghai"/>
+                <property name="username" value="root"/>
+                <property name="password" value="Lx20020307"/>
+            </dataSource>
+        </environment>
+    </environments>
+    
+    <mappers>
+        <mapper class="com.honghua.dao.add.SQLadd"/>
+        <mapper class="com.honghua.dao.update.SQLupdate"/>
+        <mapper class="com.honghua.dao.remove.SQLremove"/>
+        <mapper class="com.honghua.dao.find.SQLfind"/>
+    </mappers>
+    
+</configuration>
