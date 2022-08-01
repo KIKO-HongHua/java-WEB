@@ -1,7 +1,5 @@
 # WEB课设
 
-https://honghua.notion.site/79d1facad4154e2d84c3fd4f24382d17
-
 #### 课题描述&需求描述
 
 首先，这次课设通过界面实现了注册登录注销账号。
